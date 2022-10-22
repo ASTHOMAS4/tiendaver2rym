@@ -95,6 +95,7 @@ main h2{
 }
 main p{
     font-family: "Outfit", sans-serif;
+    font-size: 2rem;
 }
 
 /* botones*/
@@ -156,8 +157,18 @@ footer img{
 
 
 .jerrymamado{
-    border: solid 4px #FEF972;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 200px;
+    height: 400px;
+    text-align: center;
     
+}
+.jerrymamadoimg{
+    border: solid 4px #FEF972;
+    border-radius: 10%;
 }
 
 .contenido-del-index{

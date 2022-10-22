@@ -144,7 +144,7 @@ footer img{
     border-radius: 10px;
 }
 
-/*id*/
+/*pagina catalogo*/
 
 .galeria{
 
@@ -155,7 +155,7 @@ footer img{
     border: #FEF972;
 }
 
-
+/*pagina nosotros*/
 .jerrymamado{
     display: flex;
     flex-direction: column;
@@ -164,13 +164,47 @@ footer img{
     width: 200px;
     height: 400px;
     text-align: center;
+    margin-left: 5%;
+    grid-area: jerry;
     
 }
 .jerrymamadoimg{
     border: solid 4px #FEF972;
     border-radius: 10%;
+    height: auto;
+    width: 100%;
+    max-width: 300px;
 }
-
+.nosotrosTexto{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 400px;
+    text-align: right;
+    grid-area: ntexto;
+}
+.nosotrosTexto h2{
+    font-size: 2rem;
+}
+.nosotrosTexto h3{
+    font-size: 2rem;
+    color: #FEF972;
+}
+#nosotrosContenido{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    height: 100vh;
+        padding: 0px;
+        margin: 0%;
+        grid-template-areas:
+            "jerry ntexto";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+}
 .contenido-del-index{
     margin-top: 5px;
     display: flex;
@@ -357,6 +391,18 @@ catalogoSubTitulo{
     }
     .textoindex{
         text-align: right;
+    }
+
+    #nosotrosContenido{
+        display: grid;
+        align-items: center;
+        padding: 0px;
+        margin: 0%;
+        grid-template-areas:
+            "ntexto ntexto"
+            "jerry jerry";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
     }
 }
 

@@ -12,10 +12,12 @@ body{
 h1{
     font-family: "Outfit", sans-serif;
     font-size: 2.5rem;
+    color: #FEF972;
 }
 p{
     font-family: "Outfit", sans-serif;
     font-size: 1rem; 
+    color: #FEF972;
 }
 button{
     font-family: "Outfit", sans-serif;
@@ -35,6 +37,7 @@ button{
     min-width: 100px;
     background-color: #FEF972;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .texto_index{

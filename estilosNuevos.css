@@ -1,0 +1,98 @@
+/* MAIN --- INDEX responsive*/
+body{
+    min-width: 250px;
+    background-image: linear-gradient( 360deg, #0e0e0e 0%, #10a7c9 );
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* contenido INDEX*/
+h1{
+    font-family: "Outfit", sans-serif;
+    font-size: 2.5rem;
+}
+p{
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem; 
+}
+button{
+    font-family: "Outfit", sans-serif;
+    font-size: 1.5rem; 
+}
+.contenido_index{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+#botonRegistrarse{
+    padding: 10px;
+    border-radius: 25px;
+    border-color: lightslategray;
+    border: 2px;
+    border-style: solid;
+    min-width: 100px;
+    background-color: #FEF972;
+    cursor: pointer;
+}
+
+.texto_index{
+    height: 60%;
+    width: 60%;
+    margin-left: 40%;
+    margin-bottom: 20%;
+
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+}
+
+.imagen_index{
+
+}
+.rymimg{
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    min-width: 150px;
+    margin-bottom: 15%;
+}
+
+/* contenido responsivo*/
+
+
+@media (max-width: 858px){
+    .contenido_index{
+        grid-template-areas: 
+        "centrarbarra centrarbarra"
+        "texto_index texto_index"
+        "imagen_index imagen_index";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .centrarbarra{
+        grid-area: centrarbarra;
+    }
+    .texto_index{
+        grid-area: texto_index;
+        margin-left: 15px;
+        height: 90%;
+        
+        margin-left: 20%;
+        text-align: center;
+        margin-right: 15%;
+        margin-bottom: 0%;
+    }
+    .imagen_index{
+        grid-area: imagen_index;
+
+        margin-left: 15%;
+    }
+    
+}

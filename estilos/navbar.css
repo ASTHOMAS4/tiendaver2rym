@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;900&display=swap);
+
+
+/* HEADER --- menu responsive*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{
+    background: #9FE6E8;
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 15px 50px;
+}
+.logo{
+    height: 50px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #0e0e0e;
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+    padding: 7px 13px;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: #055ec4;
+    transition: .5s;
+    color: #fef972;
+}
+header h1{
+    display: inline;
+    
+}
+i.active, i:hover{
+    transition: .5s;
+    color: #fef972;
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    color: #0e0e0e;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+section{
+    height: calc(100vh - 80px);
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #fef972;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+

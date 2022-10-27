@@ -1,0 +1,66 @@
+/* busqueda y carrito*/
+
+input{
+    width: 100%;
+    height: 30px;
+    margin: 0 5px;
+    border: none;    
+}
+input:focus{
+    outline: none;
+}
+.centrarbarra{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    justify-content: space-between;
+    align-content: center;
+}
+.barra_busqueda{
+    width: 90%;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 5px 15px 5px 10px;
+    align-items: center;
+    align-content: center;
+    /* background-color: violet; */
+    display: flex;
+    border-radius: 25px;
+    border-color: lightslategray;
+    border: 2px;
+    border-style: solid;
+    min-width: 100px;
+    background-color: #FEF972;
+}
+.input{
+    background-color: #FEF972;
+}
+.lupa{}
+
+.icon{
+    display: grid;
+    align-content: center;
+    color: grey;
+}
+
+.iconoCarrito{
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 5px 5px 5px 5px;
+    background-color: #FEF972;
+    display: flex;
+    border-radius: 15px;
+    border-color: lightslategray;
+    border: 2px;
+    border-style: solid;
+    
+
+}
+.fotocarrito{
+    height: 35px;
+}
